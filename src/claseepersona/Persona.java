@@ -127,4 +127,19 @@ class Persona {
             }
         }
     }
+
+    private int getEdadEnFecha(String cadenaFecha){
+            LocalDate fechaActual = generarFecha(cadenaFecha);
+        if (this.fechaNacimiento == null || fechaActual.isBefore(this.fechaNacimiento)) {
+            return -1;
+        }
+        int edad = fechaActual.getYear() - this.fechaNacimiento.getYear();
+        if (fechaActual.getMonthValue() < this.fechaNacimiento.getMonthValue()
+                || (fechaActual.getMonthValue() == this.fechaNacimiento.getMonthValue()
+                && fechaActual.getDayOfMonth() < this.fechaNacimiento.getDayOfMonth())) {
+            edad--;
+        }
+        return edad;
+    }
+    
 }
