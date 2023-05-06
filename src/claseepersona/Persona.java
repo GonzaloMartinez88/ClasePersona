@@ -127,7 +127,13 @@ class Persona {
             }
         }
     }
-
+    
+    public int getEdadEnFecha(){
+        return getEdadEnFecha();
+        
+    }
+    
+    
     private int getEdadEnFecha(String cadenaFecha){
             LocalDate fechaActual = generarFecha(cadenaFecha);
         if (this.fechaNacimiento == null || fechaActual.isBefore(this.fechaNacimiento)) {
