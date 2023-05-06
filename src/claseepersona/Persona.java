@@ -115,10 +115,12 @@ class Persona {
             throw new IllegalArgumentException();
         } else {
             try {
+                System.out.println("fecha");
                 dia = Integer.parseInt(fecha.subSequence(0, 2).toString());
                 mes = Integer.parseInt(fecha.subSequence(3, 5).toString());
                 anyo = Integer.parseInt(fecha.subSequence(6, fecha.length()).toString());
                 return LocalDate.of(anyo, mes, dia);
+                
             } catch (NumberFormatException ex1) {
 
                 throw new IllegalArgumentException();
