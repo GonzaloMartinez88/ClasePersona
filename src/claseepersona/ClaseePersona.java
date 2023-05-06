@@ -40,6 +40,9 @@ public class ClaseePersona {
         for (int i = 0; i < 10; i++) {
             
         }
+        for (int i = 0; i < 10; i++) {
+            
+        }
         for (int i = 1; i <= numPersSinFecha; i++) {
             nombreAlumno = sc.nextLine();
             apellidoAlumno = sc.nextLine();

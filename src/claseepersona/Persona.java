@@ -116,6 +116,7 @@ class Persona {
         } else {
             try {
                 System.out.println("fecha");
+                System.out.println("Aqui otra modificacion");
                 dia = Integer.parseInt(fecha.subSequence(0, 2).toString());
                 mes = Integer.parseInt(fecha.subSequence(3, 5).toString());
                 anyo = Integer.parseInt(fecha.subSequence(6, fecha.length()).toString());
